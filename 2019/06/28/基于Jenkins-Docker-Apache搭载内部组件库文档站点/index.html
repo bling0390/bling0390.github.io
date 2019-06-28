@@ -3,18 +3,19 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>学习笔记</title>
+  <title>基于Jenkins + Docker + Apache搭载内部组件库文档站点 | 学习笔记</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="用于记录日常工作中接触到的新技术使用心得">
-<meta property="og:type" content="website">
-<meta property="og:title" content="学习笔记">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="原始需求 组件库使用文档可视化，方便查阅； 当有代码提交后，文档站点能够自动更新部署；  工具 Jenkins Docker Apache  实现思路 Jenkins迁出代码、构建、打包  123456789101112131415161718192021222324252627282930313233********************************************* 部分">
+<meta property="og:type" content="article">
+<meta property="og:title" content="基于Jenkins + Docker + Apache搭载内部组件库文档站点">
+<meta property="og:url" content="http://yoursite.com/2019/06/28/基于Jenkins-Docker-Apache搭载内部组件库文档站点/index.html">
 <meta property="og:site_name" content="学习笔记">
-<meta property="og:description" content="用于记录日常工作中接触到的新技术使用心得">
+<meta property="og:description" content="原始需求 组件库使用文档可视化，方便查阅； 当有代码提交后，文档站点能够自动更新部署；  工具 Jenkins Docker Apache  实现思路 Jenkins迁出代码、构建、打包  123456789101112131415161718192021222324252627282930313233********************************************* 部分">
 <meta property="og:locale" content="Simplified Chinese">
+<meta property="og:updated_time" content="2019-06-28T07:50:29.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="学习笔记">
-<meta name="twitter:description" content="用于记录日常工作中接触到的新技术使用心得">
+<meta name="twitter:title" content="基于Jenkins + Docker + Apache搭载内部组件库文档站点">
+<meta name="twitter:description" content="原始需求 组件库使用文档可视化，方便查阅； 当有代码提交后，文档站点能够自动更新部署；  工具 Jenkins Docker Apache  实现思路 Jenkins迁出代码、构建、打包  123456789101112131415161718192021222324252627282930313233********************************************* 部分">
   
     <link rel="alternate" href="/atom.xml" title="学习笔记" type="application/atom+xml">
   
@@ -50,7 +51,7 @@
     <div class="collapse navbar-collapse" id="main-menu-navbar">
       <ul class="nav navbar-nav">
         
-          <li><a class="active" href="/index.html">Home</a></li>
+          <li><a class href="/index.html">Home</a></li>
         
           <li><a class href="/archives/">Archives</a></li>
         
@@ -75,15 +76,13 @@
 
     <div class="row">
         <div class="col-sm-8 blog-main">
-          
-  
-    <article id="post-基于Jenkins-Docker-Apache搭载内部组件库文档站点" class="article article-type-post" itemscope itemprop="blogPost">
+          <article id="post-基于Jenkins-Docker-Apache搭载内部组件库文档站点" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
     
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/06/28/基于Jenkins-Docker-Apache搭载内部组件库文档站点/">基于Jenkins + Docker + Apache搭载内部组件库文档站点</a>
+    <h1 class="article-title" itemprop="name">
+      基于Jenkins + Docker + Apache搭载内部组件库文档站点
     </h1>
   
 
@@ -162,86 +161,22 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<ul id="article-nav" class="nav nav-pills nav-justified">
   
-    <article id="post-Verdaccio使用简单说明" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
+  <li role="presentation">
+    <a href="/2019/05/22/Verdaccio使用简单说明/" id="article-nav-older" class="article-nav-link-wrap">
+      <i class="fa fa-chevron-left pull-left"></i>
+      <span class="article-nav-link-title">Verdaccio使用简单说明</span>
+    </a>
+  </li>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/05/22/Verdaccio使用简单说明/">Verdaccio使用简单说明</a>
-    </h1>
   
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2019/05/22/Verdaccio使用简单说明/" class="article-date"><time datetime="2019-05-22T01:50:00.000Z" itemprop="datePublished">2019-05-22</time></a>
-</div>
-
-    
-    
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><ul>
-<li>Verdaccio 是一个开源私有化代理镜像服务器，支持第三方包缓存、本地项目发布。</li>
 </ul>
-<h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><ul>
-<li><a href="https://github.com/verdaccio/verdaccio" target="_blank" rel="noopener">github地址</a></li>
-<li><a href="https://verdaccio.org/docs/zh-CN/installation" target="_blank" rel="noopener">官方详细使用文档</a></li>
-</ul>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">//  设置默认，可选。如执行本命令，则后续命令中的registry地址可省略</span><br><span class="line">$ npm set registry http://192.168.5.151:4873</span><br><span class="line">// 增加登录用户，根据提示内容填写即可</span><br><span class="line">$ npm adduser --registry http://192.168.5.151:4873</span><br><span class="line">// 切换至项目目录</span><br><span class="line">$ cd path/to/your/project </span><br><span class="line">// 发布项目至镜像服务器</span><br><span class="line">$ npm publish --registry http://192.168.5.151:4873</span><br></pre></td></tr></table></figure>
-<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ul>
-<li>项目package.json文件中的name属性不能与<a href="https://www.npmjs.com/" target="_blank" rel="noopener">官方registry</a>中的包名相同，否则会导致发布失败。<strong>系统输出的提示不够清晰</strong>。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">npm ERR! code EPUBLISHCONFLICT</span><br><span class="line">npm ERR! publish fail Cannot publish over existing version.</span><br><span class="line">npm ERR! publish fail Update the &apos;version&apos; field in package.json and try again.</span><br><span class="line">npm ERR! publish fail</span><br><span class="line">npm ERR! publish fail To automatically increment version numbers, see:</span><br><span class="line">npm ERR! publish fail     npm help version</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="本地化"><a href="#本地化" class="headerlink" title="本地化"></a>本地化</h2><ul>
-<li>官方版本暂未支持！</li>
-</ul>
-<h2 id="账号管理"><a href="#账号管理" class="headerlink" title="账号管理"></a>账号管理</h2><ul>
-<li>目前只能能对账号进行添加动作，不支持编辑以及删除。<a href="https://github.com/verdaccio/ui/issues/2" target="_blank" rel="noopener">issue</a></li>
-</ul>
-<h2 id="项目运行"><a href="#项目运行" class="headerlink" title="项目运行"></a>项目运行</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 目前使用docker部署Verdaccio镜像服务</span><br><span class="line">$ docker run -it --rm --name verdaccio  -d -p 4873:4873 verdaccio/verdaccio:4.x-next</span><br></pre></td></tr></table></figure>
-<ul>
-<li><a href="https://docs.docker.com/engine/reference/commandline/run/" target="_blank" rel="noopener">docker run 命令的详细解释</a></li>
-</ul>
-<h2 id="代理镜像"><a href="#代理镜像" class="headerlink" title="代理镜像"></a>代理镜像</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// 配置文件: verdaccio/conf/config.yaml</span><br><span class="line"></span><br><span class="line">uplinks:</span><br><span class="line">  cnpm</span><br><span class="line">    url: https://registry.npm.taobao.org/</span><br><span class="line">    timeout: 500ms</span><br><span class="line">  npmjs:</span><br><span class="line">    url: https://registry.npmjs.org/</span><br></pre></td></tr></table></figure>
-<h2 id="To-be-continued"><a href="#To-be-continued" class="headerlink" title="To be continued"></a>To be continued</h2>
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/22/Verdaccio使用简单说明/" data-id="cjxfsrko000023jr5yki2soin" class="article-share-link">
-        <i class="fa fa-share"></i> Share
-      </a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Verdaccio/">Verdaccio</a></li></ul>
-
-
-    </footer>
-  </div>
-  
-</article>
-
 
 
   
+</article>
 
 
 
